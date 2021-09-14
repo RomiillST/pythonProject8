@@ -7,6 +7,5 @@ ds.add_handler(CommandHandler('start', start))
 ds.add_handler(CommandHandler('score', score))
 ds.add_handler(MessageHandler(Filters.text, press_f))
 
-upd.start_polling(drop_pending_updates=True)
 updater.start_polling(clean=True)
 updater.idle()
